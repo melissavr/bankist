@@ -12,6 +12,7 @@ const section1 = document.querySelector('#section--1');
 const tabs = document.querySelectorAll('.operations__tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
 const tabsContent = document.querySelectorAll('.operations__content');
+const iconContainer = document.querySelectorAll('.container__img');
 const nav = document.querySelector('.nav');
 
 const openModal = function (e) {
@@ -58,6 +59,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
 // Tabbed component
 tabsContainer.addEventListener('click', function (e) {
   const clicked = e.target.closest('.operations__tab');
+  const clickedIcon = clicked.childNodes[3];
 
   // Guard clause
   if (!clicked) return;
@@ -68,12 +70,18 @@ tabsContainer.addEventListener('click', function (e) {
 
   // Activate tab
   clicked.classList.add('operations__tab--active');
+  tabsContainer.classList.remove('tab--1', 'tab--2', 'tab--3');
+  tabsContainer.classList.add(`tab--${clicked.dataset.tab}`);
+  iconContainer.forEach(c => c.classList.remove('container__img--active'));
+  clickedIcon.classList.add('container__img--active');
 
   // Activate content area
   document
     .querySelector(`.operations__content--${clicked.dataset.tab}`)
     .classList.add('operations__content--active');
 });
+
+// Add/remove icons
 
 // Menu fade animation
 

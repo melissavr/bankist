@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/png" href="img/icon.png" />
 
@@ -10,60 +10,69 @@
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Allura&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Bankist | When Banking meets Minimalist</title>
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <img
-          src="img/logo.png"
-          alt="Bankist logo"
-          class="nav__logo"
-          id="logo"
-        />
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="#section--1">Features</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--2">Operations</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#section--3">Testimonials</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--btn btn--show-modal" href="#"
-              >Open account</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <header class="header">
+        <div class="block"></div>
+        <nav class="nav">
+          <img
+            src="img/logo.png"
+            alt="Bankist logo"
+            class="nav__logo"
+            id="logo"
+          />
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="nav__link" href="#section--1">Features</a>
+            </li>
 
-      <div class="header__title">
-        <h1>
-          When
-          <!-- Green highlight effect -->
-          <span class="highlight">banking</span>
-          meets<br />
-          <span class="highlight">minimalist</span>
-        </h1>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">Operations</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--3">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+                >Open account</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__title">
+          <div class="wrapper__header">
+          <h1>
+            When banking <br />
+            <!-- Text effect -->
+            <span class="text-effect">meets</span>
+            minimalist
+          </h1>
+          <div class="block__small"></div>
+        </div>
+
         <h4>A simpler banking experience for a simpler life.</h4>
+
         <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
         <img
           src="img/hero.png"
           class="header__img"
-          alt="Minimalist bank items"
-        />
-      </div>
-    </header>
-
+          alt="Minimalist bank items"/>
+      </header>
+    </div>
+    <br>     <br>     <br>
     <section class="section" id="section--1">
       <div class="section__title">
-        <h2 class="section__description">Features</h2>
+        <div class="wrapper__header">
+          <div class="block__icon"></div> 
+          <div> <h2 class="section__description">Features</h2></div>
+      </div>
         <h3 class="section__header">
-          Everything you need in a modern bank and more.
+          Everything you need in <span class="text-effect">a modern</span> <br> bank and more.
         </h3>
       </div>
 
@@ -76,29 +85,30 @@
         />
         <div class="features__feature">
           <div class="features__icon">
-            <svg>
+            <!-- <svg>
               <use xlink:href="img/icons.svg#icon-monitor"></use>
-            </svg>
+            </svg> -->
+            <img
+            src="img/icon-blocks.png"
+            class="icon-blocks"
+          />
           </div>
           <h5 class="features__header">100% digital bank</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
-            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
-            debitis ducimus.
+            We have lots of ways for you to manage your money anytime, anywhere. Whether that's checking your balance, moving money between accounts or making payments, you can do your banking where and when it's convenient for you.
           </p>
         </div>
 
         <div class="features__feature">
           <div class="features__icon">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-trending-up"></use>
-            </svg>
+            <img
+            src="img/icon-blocks.png"
+            class="icon-blocks"
+          />
           </div>
           <h5 class="features__header">Watch your money grow</h5>
           <p>
-            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
-            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
-            quibusdam!
+            Realising your longer-term financial goals requires understanding where you're at right now. Contact us to discuss your goals and how best to reach them. 
           </p>
         </div>
         <img
@@ -116,15 +126,14 @@
         />
         <div class="features__feature">
           <div class="features__icon">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-credit-card"></use>
-            </svg>
+            <img
+            src="img/icon-blocks.png"
+            class="icon-blocks"
+          />
           </div>
           <h5 class="features__header">Free debit card included</h5>
           <p>
-            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
-            eveniet consequatur odit quam quos possimus assumenda dicta fuga
-            inventore ab.
+            Use your free Bankist Debit Visa to pay for things online, in stores, or overseas. You can also use Apple Pay or Google Pay, and manage your card in the Bankist app.
           </p>
         </div>
       </div>
@@ -132,76 +141,81 @@
 
     <section class="section" id="section--2">
       <div class="section__title">
+        <div class="wrapper__header">
+          <div class="block__icon"></div> 
         <h2 class="section__description">Operations</h2>
+      </div> 
         <h3 class="section__header">
-          Everything as simple as possible, but no simpler.
+          Everything as simple as possible, but no <span class="text-effect">simpler</span>.
         </h3>
       </div>
 
       <div class="operations">
-        <div class="operations__tab-container">
+        <div class="operations__tab-container tab--1">
           <button
             class="btn operations__tab operations__tab--1 operations__tab--active"
             data-tab="1"
           >
             <span>01</span>Instant Transfers
+            <div class="container__img container__img--active" >
+              <img class="icon--1" src="img/plus.png" alt="">
+            </div>
           </button>
           <button class="btn operations__tab operations__tab--2" data-tab="2">
             <span>02</span>Instant Loans
+            <div class="container__img" >
+              <img class="icon--2 " src="img/plus.png" alt="">
+            </div>
           </button>
           <button class="btn operations__tab operations__tab--3" data-tab="3">
-            <span>03</span>Instant Closing
+            <span>03</span>Instant Closing 
+            <div class="container__img" >
+            <img class="icon--3 " src="img/plus.png" alt="">
+          </div>
           </button>
         </div>
         <div
           class="operations__content operations__content--1 operations__content--active"
         >
-          <div class="operations__icon operations__icon--1">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-upload"></use>
-            </svg>
+
+          <div class="icon-container">     
+            <img
+            src="img/icon-blocks2.png"
+            class="icon-blocks2"/>
           </div>
           <h5 class="operations__header">
-            Tranfser money to anyone, instantly! No fees, no BS.
+            Transfer money to anyone, instantly! No fees, no BS.
           </h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Quickly transfer money between your bank accounts or to payees with drag and drop, which allows you to see exactly who you're paying.
           </p>
         </div>
 
         <div class="operations__content operations__content--2">
-          <div class="operations__icon operations__icon--2">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-home"></use>
-            </svg>
+          <div class="icon-container">     
+            <img
+            src="img/icon-blocks2.png"
+            class="icon-blocks2"/>
           </div>
+
           <h5 class="operations__header">
             Buy a home or make your dreams come true, with instant loans.
           </h5>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            No matter what you need a personal loan for, we have one easy solution to keep things simple.
           </p>
         </div>
-        <div class="operations__content operations__content--3">
-          <div class="operations__icon operations__icon--3">
-            <svg>
-              <use xlink:href="img/icons.svg#icon-user-x"></use>
-            </svg>
+        <div class="operations__content operations__content--3">   
+          <div class="icon-container">     
+            <img
+            src="img/icon-blocks2.png"
+            class="icon-blocks2"/>
           </div>
           <h5 class="operations__header">
             No longer need your account? No problem! Close it instantly.
           </h5>
           <p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+           Even though we're sad to see you go, closing your account is as easy as opening it. No hassles, no questions asked! 
           </p>
         </div>
       </div>
@@ -209,9 +223,12 @@
 
     <section class="section" id="section--3">
       <div class="section__title section__title--testimonials">
+        <div class="wrapper__header">
+        <div class="block__icon"></div> 
         <h2 class="section__description">Not sure yet?</h2>
+      </div> 
         <h3 class="section__header">
-          Millions of Bankists are already making their lifes simpler.
+          Millions of Bankists are already making their <span class="text-effect">lives</span> simpler.
         </h3>
       </div>
 
@@ -220,12 +237,7 @@
           <div class="testimonial">
             <h5 class="testimonial__header">Best financial decision ever!</h5>
             <blockquote class="testimonial__text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Accusantium quas quisquam non? Quas voluptate nulla minima
-              deleniti optio ullam nesciunt, numquam corporis et asperiores
-              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
-              id alias reiciendis, perferendis facere pariatur dolore veniam
-              autem esse non voluptatem saepe provident nihil molestiae.
+              The app is very easy to use and costs/fees are always transparent. I also like that Bankist communicates changes in prices/fees via email, and adjusts the fees frequently to reflect the market conditions. Overall I am very happy and would recommend Bankist to everybody! 
             </blockquote>
             <address class="testimonial__author">
               <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
@@ -241,11 +253,7 @@
               The last step to becoming a complete minimalist
             </h5>
             <blockquote class="testimonial__text">
-              Quisquam itaque deserunt ullam, quia ea repellendus provident,
-              ducimus neque ipsam modi voluptatibus doloremque, corrupti
-              laborum. Incidunt numquam perferendis veritatis neque repellendus.
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-              deserunt exercitationem deleniti.
+              I'm a serial minimalist and declutterer and I still love you for being a neat, tidy, simple, clear, minimalist site to navigate. You're probably about the only bank I've seen that's actually put the 'Keep It Simple' rule into practice. Plus you get the money transferred in real time. Don't change a thing. It's perfect!
             </blockquote>
             <address class="testimonial__author">
               <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
@@ -261,12 +269,7 @@
               Finally free from old-school banks
             </h5>
             <blockquote class="testimonial__text">
-              Debitis, nihil sit minus suscipit magni aperiam vel tenetur
-              incidunt commodi architecto numquam omnis nulla autem,
-              necessitatibus blanditiis modi similique quidem. Odio aliquam
-              culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
-              deleniti saepe aliquid quos inventore sequi. Necessitatibus id
-              alias reiciendis, perferendis facere.
+              Everything is easy and clear. I work with international clients, I travel and have friends and family in many different countries. It is great to be able to have access to different currencies and save money on exchange rate fees and commission. I have been with Bankist since 2015 and am a very happy customer indeed! 
             </blockquote>
             <address class="testimonial__author">
               <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
@@ -280,18 +283,20 @@
         <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
         <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
         <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div> -->
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <button class="slider__btn slider__btn--left"> <span>&larr;</span> </button>
+        <button class="slider__btn slider__btn--right"><span>&rarr;</span></button>
         <div class="dots"></div>
       </div>
     </section>
 
     <section class="section section--sign-up">
-      <div class="section__title">
+      <div class="section__title__sign-up">
+        <div class="wrapper__sign-up">
         <h3 class="section__header">
-          The best day to join Bankist was one year ago. The second best is
-          today!
+          The best day to join Bankist was one <br> year ago. The second best day is <span class="text-effect">today</span>!
         </h3>
+        <div class="block__small2"></div>
+      </div>
       </div>
       <button class="btn btn--show-modal">Open your free account today!</button>
     </section>
@@ -328,8 +333,7 @@
           target="_blank"
           href="https://twitter.com/jonasschmedtman"
           >Jonas Schmedtmann</a
-        >. Use for learning or your portfolio. Don't use to teach. Don't claim
-        as your own product.
+        >. This website was made by Melissa van Rensburg while taking Jonas's JavaScript course on Udemy. The design has been updated. 
       </p>
     </footer>
 
@@ -346,7 +350,7 @@
         <input type="text" />
         <label>Email Address</label>
         <input type="email" />
-        <button class="btn">Next step &rarr;</button>
+        <button class="btn">Submit &rarr;</button>
       </form>
     </div>
     <div class="overlay hidden"></div>
