@@ -308,6 +308,7 @@ h4 {
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
   transform: translateX(59rem);
+  max-width: 100vw;
 }
 
 /* .highlight {
@@ -867,4 +868,272 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+/* MEDIA QUERIES */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles */
+  .nav {
+    padding: 5rem 0rem 0rem 1rem;
+  }
+
+  .nav.stick {
+    position: relative;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 1.5rem;
+  }
+
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    color: black;
+    background-color: white;
+    text-transform: none;
+    padding: 0.8rem 0rem;
+  }
+
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    display: none;
+  }
+
+  .block {
+    width: 78vw;
+    height: 100vh;
+  }
+
+  .block__small {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  .btn--text {
+    font-size: 1rem;
+  }
+
+  .header__img {
+    transform: translateY(-3rem);
+    margin-left: 5rem;
+    max-width: 82vw;
+  }
+
+  .header__title {
+    justify-content: left;
+  }
+
+  .features {
+    grid-template-columns: minmax(420px, auto);
+    margin: 0 8rem;
+  }
+
+  .section {
+    padding: 5rem 3rem;
+  }
+
+  .section__header {
+    font-size: 2.8rem;
+  }
+
+  .section__title {
+    margin: 0 auto 2rem 4rem;
+  }
+
+  #section--3 {
+    margin-right: -31rem;
+  }
+
+  .section--sign-up {
+    margin-right: -30rem;
+  }
+
+  .footer {
+    margin-right: -30rem;
+  }
+
+  .footer__nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .block__small2 {
+    top: -4rem;
+  }
+
+  .container__img {
+    display: none;
+  }
+
+  .operations {
+    margin: 5rem auto 0 auto;
+  }
+
+  .operations__tab-container {
+    justify-content: flex-start;
+  }
+
+  .operations__content {
+    padding: 2.5rem 5rem 1.5rem 1rem;
+  }
+
+  .operations__content--active {
+    grid-template-columns: 0rem 43rem;
+    margin-right: -25rem;
+  }
+
+  .tab--1,
+  .tab--2,
+  .tab--3 {
+    background: white;
+  }
+
+  .operations__tab--1:hover {
+    background-color: rgba(88, 95, 95, 0.5);
+  }
+
+  .slider {
+    max-width: 50rem;
+  }
+
+  .dots {
+    display: none;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles */
+  .nav {
+    padding: 4rem 0rem;
+  }
+
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    color: black;
+    background-color: white;
+    text-transform: none;
+  }
+
+  .block {
+    width: 47vw;
+    height: 100vh;
+  }
+
+  .header__img {
+    transform: translateY(-3rem);
+    margin-left: -7rem;
+    max-width: 41vw;
+  }
+
+  .header__title {
+    justify-content: left;
+    padding-left: 1rem;
+  }
+
+  .block__small {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  .features {
+    grid-template-columns: minmax(420px, auto);
+  }
+
+  .operations {
+    max-width: 58rem;
+  }
+
+  .operations__tab {
+    margin-right: 0.5rem;
+  }
+
+  .operations__content--active {
+    column-gap: 0rem;
+  }
+
+  .icon-blocks2 {
+    margin-right: 6rem;
+  }
+  .tab--1,
+  .tab--2,
+  .tab--3 {
+    background: white;
+  }
+  .container__img {
+    display: none;
+  }
+
+  .section--sign-up .section__header {
+    font-size: 3rem;
+  }
+
+  .footer__link,
+  .footer__copyright {
+    font-size: 1.3rem;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+
+  .header__img {
+    transform: translateX(17rem);
+    max-width: 27vw;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+  .header__img {
+    transform: translateX(62rem);
+    max-width: 22vw;
+  }
+  .nav {
+    padding: 4rem 4rem;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
 }
