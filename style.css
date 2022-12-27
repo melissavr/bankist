@@ -1139,6 +1139,10 @@ h4 {
     text-transform: none;
   }
 
+  .nav.sticky {
+    position: relative;
+  }
+
   .block {
     width: 47vw;
     height: 100vh;
@@ -1146,7 +1150,7 @@ h4 {
 
   .header__img {
     transform: translateY(-3rem);
-    max-width: 72%;
+    max-width: 100%;
     position: relative;
     left: -8rem;
   }
@@ -1235,6 +1239,14 @@ h4 {
   }
   .nav {
     padding: 4rem 4rem;
+  }
+}
+
+/* Very arge screens ----------- */
+@media only screen and (min-width: 2200px) {
+  /* Styles */
+  .header__img {
+    transform: translateX(108rem);
   }
 }
 
