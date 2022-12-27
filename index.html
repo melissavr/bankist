@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Allura&family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Bankist | When Banking meets Minimalist</title>
     <script defer src="script.js"></script>
@@ -25,7 +26,7 @@
             class="nav__logo"
             id="logo"
           />
-          <ul class="nav__links">
+          <ul class="nav__links" id="burger">
             <li class="nav__item">
               <a class="nav__link" href="#section--1">Features</a>
             </li>
@@ -42,6 +43,10 @@
               >
             </li>
           </ul>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-2x fa-bars"></i>
+  </a>
         </nav>
 
         <div class="header__title">
@@ -235,7 +240,7 @@
       <div class="slider">
         <div class="slide slide--1">
           <div class="testimonial">
-            <h5 class="testimonial__header">Best financial decision ever!</h5>
+            <h5 class="testimonial__header">Best decision ever!</h5>
             <blockquote class="testimonial__text">
               The app is very easy to use and fees are always transparent. I also like that Bankist adjusts the fees frequently to reflect the market conditions. Overall I am very happy and would recommend Bankist to everybody! 
             </blockquote>
@@ -250,7 +255,7 @@
         <div class="slide slide--2">
           <div class="testimonial">
             <h5 class="testimonial__header">
-              The last step to becoming a complete minimalist
+              Absolute minimalism!
             </h5>
             <blockquote class="testimonial__text">
               You're probably about the only bank I've seen that's actually put the 'Keep It Simple' rule into practice. Plus you get the money transferred in real time. Don't change a thing. It's perfect!

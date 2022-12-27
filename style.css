@@ -191,6 +191,10 @@ img {
   color: #333;
 }
 
+.icon {
+  display: none;
+}
+
 /* HEADER */
 .header {
   padding: 0 3rem;
@@ -912,7 +916,27 @@ h4 {
   }
 
   .nav__item {
-    margin-left: 1.1rem;
+    margin-left: 0.8rem;
+  }
+
+  /* Hamburger */
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .nav #burger {
+    display: none;
+  }
+
+  /* Style the hamburger menu */
+  .nav a.icon {
+    background: white;
+    display: block;
+    width: 2rem;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #eae4cd;
+    color: white;
   }
 
   .block {
@@ -944,7 +968,7 @@ h4 {
 
   .header__title {
     justify-content: left;
-    padding-left: 3rem;
+    padding-left: 2rem;
     display: block;
   }
 
@@ -1029,8 +1053,7 @@ h4 {
   }
 
   .operations__content--active {
-    grid-template-columns: 0rem 20rem;
-    /* margin-right: -25rem; */
+    grid-template-columns: 3rem auto;
   }
 
   .tab--1,
@@ -1063,11 +1086,11 @@ h4 {
   }
 
   .slider__btn--left {
-    left: 8%;
+    left: 12%;
   }
 
   .slider__btn--right {
-    right: 8%;
+    right: 12%;
   }
 
   .testimonial__header {
@@ -1083,6 +1106,12 @@ h4 {
     padding: 1rem 0 0 1rem;
     margin-right: 2.5rem;
     font-size: 1.3rem;
+  }
+
+  .testimonial::before {
+    font-size: 15rem;
+    top: -3.7rem;
+    left: -5.8rem;
   }
 }
 
