@@ -873,7 +873,7 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 60rem;
+  max-width: 100%;
   background-color: #f3f3f3;
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
@@ -1000,25 +1000,6 @@ h4 {
 
   .nav__item {
     margin-left: 0.8rem;
-  }
-
-  /* Hamburger */
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .nav #burger {
-    display: none;
-  }
-
-  /* Style the hamburger menu */
-  .nav a.icon {
-    background: white;
-    display: block;
-    color: black;
-  }
-
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #eae4cd;
-    color: white;
   }
 
   .block {
@@ -1197,6 +1178,29 @@ h4 {
     font-size: 15rem;
     top: -3.7rem;
     left: -5.8rem;
+  }
+
+  .modal {
+    /* max-width: 30rem; */
+    padding: 7rem 4rem;
+  }
+
+  .model__form {
+    display: inline-block;
+    margin: 0 0;
+  }
+
+  .modal__form input {
+    font-size: 1.4rem;
+  }
+
+  .modal__form label {
+    font-size: 1.4rem;
+  }
+
+  .modal__header {
+    margin-bottom: 1.3rem;
+    font-size: 2.2rem;
   }
 }
 
