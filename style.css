@@ -1023,7 +1023,7 @@ h4 {
 
   .block {
     width: 60vw;
-    height: 100vh;
+    height: 84vh;
   }
 
   .block__small {
@@ -1042,10 +1042,14 @@ h4 {
     font-size: 1rem;
   }
 
+  .header {
+    height: 77vh;
+  }
+
   .header__img {
     transform: translateY(1rem);
     margin-left: 2rem;
-    max-width: 48vw;
+    max-width: 44vw;
   }
 
   .header__title {
@@ -1215,8 +1219,7 @@ h4 {
 
   .nav__link--btn:link,
   .nav__link--btn:visited {
-    color: black;
-    background-color: white;
+    font-size: 1.3rem;
     text-transform: none;
   }
 
@@ -1225,7 +1228,7 @@ h4 {
   }
 
   .block {
-    width: 47vw;
+    width: 46vw;
     height: 100vh;
   }
 
@@ -1243,6 +1246,10 @@ h4 {
 
   .block__small {
     display: none;
+  }
+
+  .section {
+    padding: 7rem 3rem;
   }
 
   h1 {
@@ -1308,6 +1315,10 @@ h4 {
   .header__img {
     transform: translateX(17rem);
     max-width: 27vw;
+  }
+
+  .nav {
+    padding: 6rem 6rem;
   }
 }
 
