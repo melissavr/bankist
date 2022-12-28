@@ -450,5 +450,16 @@ function myFunction() {
     x.style.display = 'none';
   } else {
     x.style.display = 'block';
+    x.style.backgroundColor = '#eae4cd';
+    x.style.width = '100vw';
   }
+}
+
+function menuToggle() {
+  const nav = document.getElementById('menu-overlay');
+  nav.classList.toggle('active');
+
+  const icon = document.getElementById('icon');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-times');
 }

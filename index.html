@@ -26,7 +26,8 @@
             class="nav__logo"
             id="logo"
           />
-          <ul class="nav__links" id="burger">
+          <div class="desktop-only">
+          <ul class="nav__links" >
             <li class="nav__item">
               <a class="nav__link" href="#section--1">Features</a>
             </li>
@@ -43,11 +44,36 @@
               >
             </li>
           </ul>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        </div>
+             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links  -->
+  <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-2x fa-bars"></i>
-  </a>
-        </nav>
+  </a> -->
+      <!-- Trying mobile nav from youtube video -->
+      <div id="toggleIcon" onclick="menuToggle()" class="mobile-only"><i class="fa fa-3x fa-bars" id="icon"></i></div>
+      <div id="menu-overlay" class="mobile-only">
+      <ul class="nav__links " >
+        <li class="nav__item">
+          <a class="nav__link" href="#section--1" onclick="menuToggle()">Features</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav__link" href="#section--2" onclick="menuToggle()">Operations</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#section--3" onclick="menuToggle()">Testimonials</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--btn btn--show-modal" href="#"
+            >Open account</a
+          >
+        </li>
+      </ul>
+    </div>
+
+        </nav>  
+
+       
 
         <div class="header__title">
           <div class="wrapper__header">
