@@ -205,7 +205,8 @@ img {
   background: #eae4cd;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  padding-top: 5rem;
   overflow-y: auto;
   transform: scale(0);
   transition: 0.5s;
@@ -229,13 +230,17 @@ img {
 #menu-overlay ul li a {
   position: relative;
   text-decoration: none;
-  font-size: 3.5em;
+  font-size: 2rem;
   line-height: 5rem;
   padding: 0 10px;
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
+}
+
+#menu-overlay .nav__link--btn {
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 #menu-overlay ul li a:before {
@@ -1004,7 +1009,7 @@ h4 {
 
   .block {
     width: 60vw;
-    height: 84vh;
+    height: 97vh;
   }
 
   .block__small {
@@ -1024,7 +1029,7 @@ h4 {
   }
 
   .header {
-    height: 77vh;
+    height: 89vh;
   }
 
   .header__img {
@@ -1044,8 +1049,13 @@ h4 {
   }
 
   .features__img {
-    transform: translateX(0rem);
-    width: 88%;
+    /* transform: translateX(0rem);
+    width: 88%; */
+    display: none;
+  }
+
+  .features__header {
+    line-height: 3.8rem;
   }
 
   .section {
@@ -1202,6 +1212,10 @@ h4 {
     margin-bottom: 1.3rem;
     font-size: 2.2rem;
   }
+
+  .btn--close-modal {
+    top: 3.5rem;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -1237,7 +1251,7 @@ h4 {
   }
 
   .header__img {
-    transform: translateY(-3rem);
+    transform: translateY(-5rem);
     max-width: 100%;
     position: relative;
     left: -8rem;
@@ -1266,6 +1280,10 @@ h4 {
 
   .features {
     grid-template-columns: minmax(420px, auto);
+  }
+
+  .features__img {
+    display: none;
   }
 
   .operations {
