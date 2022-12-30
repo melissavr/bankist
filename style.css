@@ -205,7 +205,7 @@ img {
   background: #eae4cd;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   padding-top: 5rem;
   overflow-y: auto;
   transform: scale(0);
@@ -241,6 +241,7 @@ img {
 
 #menu-overlay .nav__link--btn {
   padding: 1rem 2rem 1rem 2rem;
+  color: #fff;
 }
 
 #menu-overlay ul li a:before {
@@ -992,8 +993,7 @@ h4 {
 
   .nav__link--btn:link,
   .nav__link--btn:visited {
-    color: black;
-    background-color: white;
+    background-color: var(--color-primary);
     text-transform: none;
     padding: 0.8rem 0rem;
   }
@@ -1008,8 +1008,7 @@ h4 {
   }
 
   .block {
-    width: 60vw;
-    height: 97vh;
+    display: none;
   }
 
   .block__small {
@@ -1041,6 +1040,7 @@ h4 {
   .header__title {
     justify-content: left;
     padding-left: 2rem;
+    display: inline-block;
   }
 
   .features {
@@ -1068,6 +1068,14 @@ h4 {
 
   .section__title {
     margin: 0 auto 2rem 4rem;
+  }
+
+  .section__title__sign-up {
+    margin: 3rem auto 6rem auto;
+  }
+
+  .section--sign-up .section__header {
+    margin-top: 2rem;
   }
 
   #section--3 {
