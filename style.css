@@ -1028,7 +1028,9 @@ h4 {
   }
 
   .header {
-    height: auto;
+    justify-content: center;
+    row-gap: 8rem;
+    align-items: center;
   }
 
   .header__img {
