@@ -1171,12 +1171,16 @@ h4 {
     top: -6%;
   }
 
+  .slider__btn {
+    top: 40%;
+  }
+
   .slider__btn--left {
-    left: 12%;
+    left: 11%;
   }
 
   .slider__btn--right {
-    right: 12%;
+    right: 11%;
   }
 
   .testimonial {
@@ -1185,6 +1189,7 @@ h4 {
 
   .testimonial__header {
     font-size: 1.7rem;
+    margin-bottom: 0.5rem;
   }
 
   .testimonial__name,
@@ -1194,13 +1199,13 @@ h4 {
 
   .testimonial__text {
     padding: 1rem 0 0 1rem;
-    margin-right: 2.5rem;
+    margin-right: 3.5rem;
     font-size: 1.3rem;
   }
 
   .testimonial::before {
     font-size: 15rem;
-    top: -3.7rem;
+    top: -1.7rem;
     left: -5.8rem;
   }
 
