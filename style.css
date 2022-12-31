@@ -1035,8 +1035,8 @@ h4 {
 
   .header__img {
     transform: translateY(1rem);
-    margin-bottom: 5rem;
-    margin-top: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
     max-width: 50vw;
     position: relative;
     left: -3rem;
