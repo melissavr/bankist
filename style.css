@@ -1036,13 +1036,21 @@ h4 {
   .header__img {
     transform: translateY(1rem);
     margin-bottom: 5rem;
+    margin-top: 2rem;
     max-width: 50vw;
+    position: relative;
+    left: -3rem;
   }
 
   .header__title {
     justify-content: left;
     padding-left: 2rem;
     display: block;
+  }
+
+  .btn--scroll-to {
+    position: relative;
+    left: 10rem;
   }
 
   .features {
